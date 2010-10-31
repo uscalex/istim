@@ -20,5 +20,22 @@ describe "LayoutLinks" do
     get '/help'
     response.should have_selector('title', :content => "Help")
   end
+
+  it "should have a Patient Resources page at '/patient_resources'" do
+    get '/patient_resources'
+    response.should have_selector('title', :content => "Patient Resources")
+  end
+
+  it "should have a feedback page at '/feedback'" do
+    get '/feedback'
+    response.should have_selector('title', :content => "Feedback")
+  end
+
+   it "should have a page about me at '/taghva'" do
+    get '/taghva'
+    response.should have_selector('title', :content => "Taghva")
+  end	
+
+
 end
 
