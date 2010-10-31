@@ -1,9 +1,10 @@
  <header>
-        <%= image_tag("logo.png", :alt => "iStim - a resource for DBS", :class => "round") %>
+        <%= logo = image_tag("logo.png", :alt => "iStim - a resource for DBS", :class => "round") %>
+	<% link_to logo, root_path %>
         <nav class="round">
           <ul>
-            <li><%= link_to "Home", '#' %></li>
-            <li><%= link_to "Help", '#' %></li>
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "Help", help_path %></li>
             <li><%= link_to "Patient Sign In", '#' %></li>
             <li><%= link_to "iStim Researchers", '#' %></li>
           </ul>

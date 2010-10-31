@@ -29,12 +29,12 @@ section h1 {
 /* Links */
 
 a {
-  color: #fff;
+  color: #008080;
   text-decoration: none;
 }
 
 a:hover {
-  color: #0000FF;
+  color: #00CCCC;
   text-decoration: underline;
 }
 
